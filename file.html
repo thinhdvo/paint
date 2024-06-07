@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            height: 820px;
+            width: 680px;
+            display: grid;
+            grid-template-rows: 150px 400px 80px 100px;
+            grid-template-columns: 120px 400px 100px;
+            gap: 30px;
+            background-color: black;
+            padding: 30px;
+        }
+        
+        .white1 {
+            background-color: white;
+        }
+        
+        .red {
+            background-color: red;
+            /* grid-area: 1 / 2 / 3 / 4; */
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        
+        .white2 {
+            background-color: white;
+        }
+        
+        .blue {
+            background-color: blue;
+            grid-row: span 2;
+        }
+        
+        .white3 {
+            background-color: white;
+            grid-row: span 2;
+        }
+        
+        .white4 {
+            background-color: white;
+        }
+        
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="item white1"></div>
+            <div class="item red"></div>
+            <div class="item white2"></div>
+            <div class="item blue"></div>
+            <div class="item white3"></div>
+            <div class="item white4"></div>
+            <div class="item yellow"></div>
+        </div>
+    </div>
+</body>
+
+</html>
